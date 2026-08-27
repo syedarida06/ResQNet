@@ -1,6 +1,7 @@
 /* =========================================================
    RESQNET — HOME PAGE
    Light • Modern • Professional • Disaster Response
+   TEXT COLOR REFINEMENT ONLY
 ========================================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
@@ -21,6 +22,10 @@
   --ink-dark: #0b292d;
   --text: #3b5b5f;
   --muted: #667f82;
+
+  /* Slightly deeper professional heading colors */
+  --heading: #173f43;
+  --heading-accent: #087f6c;
 
   --mint: #37cfa8;
   --mint-dark: #14977d;
@@ -633,7 +638,7 @@ button {
 
 
 /* =========================================================
-   HERO TITLE
+   HERO TITLE — DARKER
 ========================================================= */
 
 .hero h1 {
@@ -647,13 +652,13 @@ button {
 
   letter-spacing: -3px;
 
-  color: var(--ink-dark);
+  color: #163d41;
 }
 
 .hero h1 span {
   display: block;
 
-  color: var(--mint-dark);
+  color: #087d6a;
 }
 
 
@@ -1183,7 +1188,7 @@ button {
 
 
 /* =========================================================
-   SECTION HEADINGS — IMPORTANT FIX
+   SECTION HEADINGS — DARKER PROFESSIONAL PALETTE
 ========================================================= */
 
 .section-heading {
@@ -1227,7 +1232,7 @@ button {
 .section-tag h2 {
   margin: 0;
 
-  color: var(--mint-dark);
+  color: #087f6c;
 
   font-size: 10px;
   font-weight: 800;
@@ -1238,7 +1243,7 @@ button {
 }
 
 
-/* MAIN SECTION TITLE */
+/* MAIN SECTION TITLE — DARKER */
 
 .section-heading > h2 {
   display: block;
@@ -1249,7 +1254,7 @@ button {
 
   font-family: "Manrope", sans-serif;
 
-  color: var(--ink-dark);
+  color: #173f43;
 
   font-size: clamp(31px, 4vw, 46px);
 
@@ -1258,8 +1263,11 @@ button {
   letter-spacing: -1.8px;
 }
 
+
+/* HEADING ACCENT — DARKER */
+
 .section-heading > h2 span {
-  color: var(--mint-dark);
+  color: #087d6a;
 }
 
 
@@ -1286,7 +1294,7 @@ button {
 
 
 /* =========================================================
-   THE CHALLENGE — EXTRA ALIGNMENT
+   THE CHALLENGE
 ========================================================= */
 
 .problem-section .section-heading {
@@ -1308,6 +1316,12 @@ button {
   display: block;
 
   white-space: normal;
+
+  color: #173f43;
+}
+
+.problem-section .section-heading > h2 span {
+  color: #087d6a;
 }
 
 .problem-section .section-heading > p {
@@ -1400,7 +1414,7 @@ button {
 
   font-size: 17px;
 
-  color: var(--ink);
+  color: #173f43;
 }
 
 .problem-card p {
@@ -1416,7 +1430,6 @@ button {
 
 /* =========================================================
    HOW IT WORKS
-   ALL 6 SIDE BY SIDE
 ========================================================= */
 
 .how-section {
@@ -1496,7 +1509,7 @@ button {
 }
 
 .workflow-step h3 {
-  color: var(--ink);
+  color: #173f43;
 
   font-family: "Manrope", sans-serif;
 
@@ -1544,7 +1557,7 @@ button {
   right: -2px;
   top: -10px;
 
-  color: var(--mint-dark);
+  color: #087d6a;
 
   font-size: 16px;
 }
@@ -1660,7 +1673,7 @@ button {
   position: relative;
   z-index: 2;
 
-  color: var(--ink);
+  color: #173f43;
 
   font-family: "Manrope", sans-serif;
 
@@ -1685,7 +1698,6 @@ button {
 
 /* =========================================================
    ROLES / WHO WE SERVE
-   THREE SIDE BY SIDE
 ========================================================= */
 
 .roles-grid {
@@ -1784,7 +1796,7 @@ button {
 .role-card h3 {
   margin-top: 7px;
 
-  color: var(--ink-dark);
+  color: #173f43;
 
   font-family: "Manrope", sans-serif;
 
@@ -1884,7 +1896,7 @@ button {
 .cta-section h2 {
   font-family: "Manrope", sans-serif;
 
-  color: var(--ink-dark);
+  color: #173f43;
 
   font-size: 31px;
 
@@ -1892,7 +1904,7 @@ button {
 }
 
 .cta-section h2 span {
-  color: var(--mint-dark);
+  color: #087d6a;
 }
 
 .cta-section p {
@@ -2018,7 +2030,7 @@ button {
 .footer-links h4 {
   margin-bottom: 5px;
 
-  color: var(--ink);
+  color: #173f43;
 
   font-size: 13px;
 }
@@ -2091,11 +2103,6 @@ a:focus-visible {
     grid-template-columns:
       repeat(2, 1fr);
   }
-
-  /*
-     On medium screens keep the workflow
-     horizontally organized in 3 + 3.
-  */
 
   .workflow {
     display: grid;
@@ -2208,6 +2215,12 @@ a:focus-visible {
     font-size: 44px;
 
     letter-spacing: -2px;
+
+    color: #163d41;
+  }
+
+  .hero h1 span {
+    color: #087d6a;
   }
 
   .hero-description {
@@ -2281,6 +2294,12 @@ a:focus-visible {
     letter-spacing: -1.2px;
 
     width: 100%;
+
+    color: #173f43;
+  }
+
+  .section-heading > h2 span {
+    color: #087d6a;
   }
 
   .section-heading > p {
@@ -2340,6 +2359,12 @@ a:focus-visible {
 
   .cta-section h2 {
     font-size: 27px;
+
+    color: #173f43;
+  }
+
+  .cta-section h2 span {
+    color: #087d6a;
   }
 
   .cta-buttons {
