@@ -14,7 +14,7 @@ import Navbar from "./Navbar";
 import "./ResponderDashboard.css";
 
 const API_URL =
-  "http://https://res-q-net-j6pb-5nuqnak23-syeda-rida-s-projects1.vercel.app/api";
+  "https://res-q-net-j6pb-5nuqnak23-syeda-rida-s-projects1.vercel.app/api";
 
 /* =========================================================
    DATE / TIME HELPERS

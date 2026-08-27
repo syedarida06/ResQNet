@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import "./Contribute.css";
 
-const API_URL = "http://https://res-q-net-j6pb-5nuqnak23-syeda-rida-s-projects1.vercel.app";
+const API_URL = "https://res-q-net-j6pb-5nuqnak23-syeda-rida-s-projects1.vercel.app";
 
 const CONTRIBUTION_TYPES = [
   "Money",
