@@ -1,0 +1,882 @@
+/* =========================================================
+   RESQNET — RESPONDER REGISTRATION
+   Premium • Emergency Network • Startup UI
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+.responder-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 5%, rgba(255, 92, 92, 0.08), transparent 28%),
+    radial-gradient(circle at 90% 20%, rgba(113, 88, 255, 0.07), transparent 30%),
+    #f6f4ef;
+  color: #171717;
+  font-family: "DM Sans", sans-serif;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.responder-container {
+  width: min(1380px, calc(100% - 64px));
+  margin: 0 auto;
+  padding: 55px 0 80px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.responder-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 50px;
+  padding: 35px 0 70px;
+  border-bottom: 1px solid rgba(20, 20, 20, 0.1);
+}
+
+.hero-left {
+  max-width: 780px;
+}
+
+.responder-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: #77736d;
+  margin-bottom: 22px;
+}
+
+.responder-eyebrow span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff5c5c;
+  box-shadow: 0 0 0 5px rgba(255, 92, 92, 0.1);
+}
+
+.responder-hero h1 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(42px, 5vw, 72px);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  font-weight: 800;
+}
+
+.responder-hero h1 em {
+  color: #ff5c5c;
+  font-style: normal;
+}
+
+.hero-left > p {
+  max-width: 650px;
+  margin: 28px 0 25px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #77736d;
+}
+
+.hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.hero-points div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #55514b;
+}
+
+.hero-points span {
+  display: grid;
+  place-items: center;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: #dff5ea;
+  color: #16865a;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.hero-status {
+  min-width: 230px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 19px;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid rgba(20,20,20,0.08);
+  border-radius: 15px;
+  box-shadow: 0 12px 35px rgba(30, 25, 20, 0.05);
+}
+
+.status-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #28b879;
+  box-shadow: 0 0 0 5px rgba(40,184,121,0.12);
+}
+
+.hero-status small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  font-weight: 800;
+  color: #99938a;
+  margin-bottom: 3px;
+}
+
+.hero-status strong {
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   REGISTRATION LAYOUT
+========================================================= */
+
+.registration-layout {
+  display: grid;
+  grid-template-columns: 310px minmax(0, 1fr);
+  gap: 28px;
+  margin-top: 38px;
+  align-items: start;
+}
+
+
+/* =========================================================
+   LEFT INFORMATION PANEL
+========================================================= */
+
+.registration-info {
+  position: sticky;
+  top: 30px;
+  padding: 30px 26px;
+  background: #1d1d1b;
+  color: white;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.registration-info::after {
+  content: "";
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  right: -100px;
+  bottom: -110px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow:
+    0 0 0 35px rgba(255,255,255,0.025),
+    0 0 0 70px rgba(255,255,255,0.018);
+}
+
+.info-number {
+  font-size: 11px;
+  font-weight: 800;
+  color: #ff7777;
+  letter-spacing: 0.15em;
+  margin-bottom: 28px;
+}
+
+.registration-info h2 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 30px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.registration-info > p {
+  color: #a9a59e;
+  font-size: 13px;
+  line-height: 1.65;
+  margin: 18px 0 32px;
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.registration-process {
+  position: relative;
+}
+
+.process-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.process-item > span {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 31px;
+  height: 31px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 50%;
+  color: #8f8c86;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.process-item.active > span {
+  background: #ff5c5c;
+  border-color: #ff5c5c;
+  color: white;
+}
+
+.process-item strong {
+  display: block;
+  font-size: 12px;
+  color: #eee;
+}
+
+.process-item small {
+  display: block;
+  margin-top: 3px;
+  font-size: 10px;
+  color: #85817a;
+}
+
+.process-line {
+  width: 1px;
+  height: 23px;
+  background: rgba(255,255,255,0.1);
+  margin-left: 15px;
+}
+
+.verification-note {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 12px;
+  margin-top: 35px;
+  padding: 15px;
+  background: rgba(255,255,255,0.055);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+}
+
+.verification-note > span {
+  font-size: 17px;
+}
+
+.verification-note strong {
+  display: block;
+  font-size: 11px;
+}
+
+.verification-note p {
+  margin: 5px 0 0;
+  color: #89867f;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   FORM CARD
+========================================================= */
+
+.registration-card {
+  background: rgba(255,255,255,0.82);
+  border: 1px solid rgba(20,20,20,0.08);
+  border-radius: 24px;
+  box-shadow: 0 20px 55px rgba(30,25,20,0.055);
+  overflow: hidden;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 31px 34px 27px;
+  border-bottom: 1px solid rgba(20,20,20,0.08);
+}
+
+.form-header span {
+  display: block;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+  color: #99938a;
+  margin-bottom: 8px;
+}
+
+.form-header h2 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 25px;
+  letter-spacing: -0.035em;
+}
+
+.form-header p {
+  margin: 7px 0 0;
+  font-size: 12px;
+  color: #979189;
+}
+
+.form-step {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.form-step span {
+  display: inline;
+  margin: 0 5px;
+  color: #c5c0b8;
+}
+
+
+/* =========================================================
+   FORM SECTION
+========================================================= */
+
+.form-section {
+  padding: 30px 34px;
+  border-bottom: 1px solid rgba(20,20,20,0.07);
+}
+
+.form-section-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin-bottom: 23px;
+}
+
+.form-section-title > span {
+  display: grid;
+  place-items: center;
+  width: 27px;
+  height: 27px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #f0eeea;
+  color: #77716a;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.form-section-title strong {
+  display: block;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+}
+
+.form-section-title small {
+  display: block;
+  margin-top: 4px;
+  color: #a19b93;
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   FORM GRID
+========================================================= */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 19px 18px;
+}
+
+.field {
+  min-width: 0;
+}
+
+.field.full {
+  grid-column: 1 / -1;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #57524b;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.field label b {
+  color: #ff5c5c;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  height: 47px;
+  box-sizing: border-box;
+  padding: 0 14px;
+  border: 1px solid #dedbd5;
+  border-radius: 11px;
+  outline: none;
+  background: #faf9f7;
+  color: #272521;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+.field input::placeholder {
+  color: #b3afa8;
+}
+
+.field select {
+  cursor: pointer;
+}
+
+.field input:hover,
+.field select:hover {
+  border-color: #c8c3bb;
+  background: white;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: #ff7777;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(255,92,92,0.08);
+}
+
+
+/* =========================================================
+   SUBMIT AREA
+========================================================= */
+
+.form-submit-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 25px 34px;
+  background: #faf9f6;
+}
+
+.submit-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 430px;
+}
+
+.submit-note > span {
+  color: #ff6868;
+  font-size: 17px;
+}
+
+.submit-note p {
+  margin: 0;
+  color: #8e8981;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.submit-responder {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 18px 14px 20px;
+  background: #ff5c5c;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(255,92,92,0.2);
+  transition: 0.2s ease;
+}
+
+.submit-responder span {
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.submit-responder:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 13px 30px rgba(255,92,92,0.27);
+}
+
+.submit-responder:hover span {
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
+   SUCCESS SCREEN
+========================================================= */
+
+.registration-success {
+  max-width: 850px;
+  margin: 55px auto 20px;
+  padding: 65px 60px;
+  text-align: center;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(20,20,20,0.08);
+  border-radius: 28px;
+  box-shadow: 0 25px 70px rgba(30,25,20,0.07);
+}
+
+.success-icon {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  background: #dff5ea;
+  color: #16865a;
+  font-size: 28px;
+  font-weight: 800;
+  box-shadow: 0 0 0 9px rgba(40,184,121,0.08);
+}
+
+.success-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: #16865a;
+}
+
+.registration-success h2 {
+  margin: 17px 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 38px;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.registration-success h2 em {
+  color: #ff5c5c;
+  font-style: normal;
+}
+
+.registration-success > p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #858078;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   APPLICATION ID
+========================================================= */
+
+.application-card {
+  max-width: 430px;
+  margin: 35px auto;
+  padding: 23px;
+  border: 1px dashed #c9c4bc;
+  border-radius: 17px;
+  background: #faf9f6;
+}
+
+.application-card small {
+  display: block;
+  color: #98928a;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.application-card strong {
+  display: block;
+  margin: 8px 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 29px;
+  letter-spacing: 0.05em;
+  color: #ff5c5c;
+}
+
+.application-card span {
+  display: block;
+  color: #9a958e;
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   SUCCESS STATUS
+========================================================= */
+
+.success-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.status-step {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  text-align: left;
+}
+
+.status-step > span {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #d8d4ce;
+  border-radius: 50%;
+  color: #aaa59e;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.status-step.active > span {
+  background: #28b879;
+  border-color: #28b879;
+  color: white;
+}
+
+.status-step strong {
+  display: block;
+  font-size: 10px;
+}
+
+.status-step small {
+  display: block;
+  margin-top: 2px;
+  color: #aaa49c;
+  font-size: 9px;
+}
+
+.status-line {
+  width: 55px;
+  height: 1px;
+  margin: 0 13px;
+  background: #ddd9d2;
+}
+
+.register-another {
+  border: none;
+  background: transparent;
+  color: #ff5c5c;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.register-another:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.responder-footer {
+  width: min(1380px, calc(100% - 64px));
+  margin: 0 auto;
+  padding: 25px 0 35px;
+  border-top: 1px solid rgba(20,20,20,0.09);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #99938a;
+  font-size: 10px;
+}
+
+.responder-footer div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.responder-footer strong {
+  color: #272521;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+}
+
+.responder-footer span {
+  color: #99938a;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .registration-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .registration-info {
+    position: static;
+  }
+
+  .registration-process {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .process-line {
+    width: 25px;
+    height: 1px;
+    margin: 0;
+  }
+
+  .process-item small {
+    display: none;
+  }
+
+  .verification-note {
+    max-width: 500px;
+  }
+}
+
+
+@media (max-width: 760px) {
+
+  .responder-container {
+    width: min(100% - 30px, 1380px);
+    padding-top: 30px;
+  }
+
+  .responder-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 45px;
+  }
+
+  .responder-hero h1 {
+    font-size: 43px;
+  }
+
+  .hero-status {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .registration-info,
+  .registration-card,
+  .registration-success {
+    border-radius: 18px;
+  }
+
+  .registration-info {
+    padding: 25px 22px;
+  }
+
+  .registration-process {
+    display: block;
+  }
+
+  .process-line {
+    width: 1px;
+    height: 18px;
+    margin-left: 15px;
+  }
+
+  .process-item small {
+    display: block;
+  }
+
+  .form-header,
+  .form-section,
+  .form-submit-area {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .field.full {
+    grid-column: auto;
+  }
+
+  .form-submit-area {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .submit-responder {
+    justify-content: space-between;
+  }
+
+  .registration-success {
+    margin-top: 30px;
+    padding: 45px 22px;
+  }
+
+  .registration-success h2 {
+    font-size: 29px;
+  }
+
+  .success-status {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 25px;
+  }
+
+  .status-line {
+    width: 1px;
+    height: 25px;
+    margin: 3px 0 3px 14px;
+  }
+
+  .responder-footer {
+    width: calc(100% - 30px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .hero-points {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .form-step {
+    display: none;
+  }
+
+}

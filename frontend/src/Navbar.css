@@ -1,0 +1,561 @@
+/* =========================================================
+   RESQNET — COMMON NAVBAR
+   Clean • Modern • Responsive
+========================================================= */
+
+.common-navbar {
+  width: 100%;
+  height: 78px;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #e8eceb;
+
+  position: relative;
+  z-index: 1000;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.common-logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  text-decoration: none;
+  color: #172322;
+
+  flex-shrink: 0;
+}
+
+.common-logo-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+  background: #eaf8f5;
+
+  font-size: 20px;
+}
+
+.common-logo div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.common-logo h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+
+  line-height: 1;
+  color: #172322;
+}
+
+.common-logo p {
+  margin: 4px 0 0;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #7b8987;
+}
+
+
+/* =========================================================
+   RIGHT ACTIONS
+========================================================= */
+
+.common-nav-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   HOME
+========================================================= */
+
+.nav-home {
+  height: 42px;
+  padding: 0 14px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  color: #53615f;
+
+  text-decoration: none;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  transition: all 0.2s ease;
+}
+
+.nav-home:hover,
+.nav-home.active {
+  background: #eaf8f5;
+  color: #159e91;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   GET HELP
+========================================================= */
+
+.nav-help {
+  height: 42px;
+  padding: 0 16px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  border: 1px solid #f0d9d5;
+  border-radius: 10px;
+
+  background: #fff8f6;
+
+  color: #c84d43;
+
+  text-decoration: none;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  transition: all 0.2s ease;
+}
+
+.nav-help:hover,
+.nav-help.active {
+  background: #fff0ed;
+  border-color: #e9bdb7;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   LIVE MAP
+========================================================= */
+
+.nav-livemap {
+  min-height: 46px;
+  padding: 5px 11px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border: 1px solid #cfe7f3;
+  border-radius: 12px;
+
+  background: linear-gradient(
+    135deg,
+    #f2faff,
+    #eaf7fc
+  );
+
+  color: #176b8a;
+
+  text-decoration: none;
+
+  transition:
+    all 0.2s ease,
+    box-shadow 0.2s ease;
+
+  white-space: nowrap;
+}
+
+.nav-livemap:hover,
+.nav-livemap.active {
+  background: linear-gradient(
+    135deg,
+    #e5f6fc,
+    #dff2fa
+  );
+
+  border-color: #a9d7e8;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 5px 14px rgba(32, 129, 163, 0.12);
+}
+
+.livemap-icon {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #d8eff8;
+
+  font-size: 16px;
+}
+
+.livemap-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+
+  line-height: 1;
+}
+
+.livemap-text strong {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+
+  color: #176b8a;
+}
+
+.livemap-text small {
+  font-family: "DM Sans", sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+
+  color: #7895a0;
+}
+
+.livemap-arrow {
+  margin-left: 2px;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  color: #159e91;
+}
+
+
+/* =========================================================
+   JOIN NETWORK
+========================================================= */
+
+.nav-join-network {
+  min-height: 46px;
+  padding: 5px 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  border: 1px solid #283f3b;
+  border-radius: 12px;
+
+  background: #f3fbf9;
+
+  color: #176f67;
+
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+
+  white-space: nowrap;
+}
+
+.nav-join-network:hover,
+.nav-join-network.active {
+  background: #e8f8f4;
+  border-color: #bde3dc;
+
+  transform: translateY(-1px);
+}
+
+.join-network-icon {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #dff4ef;
+
+  font-size: 16px;
+}
+
+.join-network-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+
+  line-height: 1;
+}
+
+.join-network-text strong {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+
+  color: #176f67;
+}
+
+.join-network-text small {
+  font-family: "DM Sans", sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+
+  color: #78928e;
+}
+
+.join-network-arrow {
+  margin-left: 3px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  color: #159e91;
+}
+
+
+/* =========================================================
+   RESPONSE CENTRE
+========================================================= */
+
+.nav-dashboard {
+  height: 42px;
+  padding: 0 15px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  border-radius: 10px;
+
+  background: #dff4ef;
+  border: 1px solid #869c9a;
+
+  color: #453f3f;
+
+  text-decoration: none;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  transition: all 0.2s ease;
+}
+
+.nav-dashboard span {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.nav-dashboard:hover,
+.nav-dashboard.active {
+  background: #159e91;
+  border-color: #159e91;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .common-navbar {
+    padding: 0 3%;
+    gap: 18px;
+  }
+
+  .common-nav-actions {
+    gap: 7px;
+  }
+
+  .nav-help {
+    padding: 0 12px;
+  }
+
+  .nav-dashboard {
+    padding: 0 12px;
+  }
+
+  .nav-join-network {
+    padding: 5px 8px;
+  }
+
+  .nav-livemap {
+    padding: 5px 8px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE / TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .common-navbar {
+    height: auto;
+    min-height: 78px;
+
+    flex-wrap: wrap;
+
+    padding: 14px 4%;
+  }
+
+  .common-nav-actions {
+    margin-left: auto;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .common-logo p {
+    display: none;
+  }
+
+  .common-logo h2 {
+    font-size: 18px;
+  }
+
+  .common-logo-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+
+  /* =====================================================
+     JOIN NETWORK → ICON ONLY
+  ===================================================== */
+
+  .join-network-text {
+    display: none;
+  }
+
+  .nav-join-network {
+    width: 42px;
+    height: 42px;
+    padding: 4px;
+
+    justify-content: center;
+  }
+
+  .join-network-arrow {
+    display: none;
+  }
+
+  .join-network-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+
+  /* =====================================================
+     LIVE MAP → ICON ONLY
+  ===================================================== */
+
+  .livemap-text {
+    display: none;
+  }
+
+  .nav-livemap {
+    width: 42px;
+    height: 42px;
+    padding: 4px;
+
+    justify-content: center;
+  }
+
+  .livemap-arrow {
+    display: none;
+  }
+
+  .livemap-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+
+  /* =====================================================
+     GET HELP → ICON ONLY
+  ===================================================== */
+
+  .nav-help {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+
+    font-size: 0;
+  }
+
+  .nav-help span {
+    font-size: 16px;
+  }
+
+
+  /* =====================================================
+     RESPONSE CENTRE → ICON ONLY
+  ===================================================== */
+
+  .nav-dashboard {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+
+    font-size: 0;
+  }
+
+  .nav-dashboard span {
+    font-size: 16px;
+  }
+
+}

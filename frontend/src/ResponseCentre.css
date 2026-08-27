@@ -1,0 +1,1089 @@
+/* =========================================================
+   RESQNET — RESPONSE CENTRE
+   Professional • Modern • Emergency Operations
+========================================================= */
+
+.response-centre-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(21, 158, 145, 0.07),
+      transparent 28%
+    ),
+    #f7faf9;
+
+  color: #172322;
+
+  font-family: "DM Sans", sans-serif;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.response-centre-main {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.response-hero {
+  max-width: 1240px;
+  margin: 0 auto;
+
+  min-height: 470px;
+
+  padding: 75px 5% 65px;
+
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+
+  align-items: center;
+  gap: 50px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.response-hero-content {
+  animation: heroReveal 0.8s ease both;
+}
+
+.response-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 8px 13px;
+
+  border: 1px solid #dce9e6;
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.8);
+
+  color: #159e91;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+}
+
+.eyebrow-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #159e91;
+
+  box-shadow:
+    0 0 0 4px rgba(21, 158, 145, 0.1);
+
+  animation: pulseDot 2s infinite;
+}
+
+.response-hero h1 {
+  margin: 22px 0 18px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: clamp(40px, 5vw, 62px);
+
+  line-height: 1.04;
+
+  letter-spacing: -0.04em;
+
+  color: #172322;
+}
+
+.response-hero h1 em {
+  font-style: normal;
+  color: #159e91;
+}
+
+.response-hero-content > p {
+  max-width: 590px;
+
+  margin: 0;
+
+  color: #6c7a78;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.response-stats {
+  display: flex;
+  align-items: center;
+
+  margin-top: 34px;
+
+  gap: 24px;
+}
+
+.response-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.response-stat strong {
+  font-family: "Manrope", sans-serif;
+
+  font-size: 18px;
+
+  color: #172322;
+}
+
+.response-stat span {
+  font-size: 10px;
+
+  color: #84908e;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.05em;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 34px;
+
+  background: #dce5e3;
+}
+
+
+/* =========================================================
+   HERO VISUAL
+========================================================= */
+
+.response-hero-visual {
+  position: relative;
+
+  height: 380px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: visualReveal 1s ease 0.15s both;
+}
+
+.visual-glow {
+  position: absolute;
+
+  width: 260px;
+  height: 260px;
+
+  border-radius: 50%;
+
+  background: rgba(21, 158, 145, 0.08);
+
+  filter: blur(4px);
+
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   ORBITS
+========================================================= */
+
+.response-orbit {
+  position: absolute;
+
+  border: 1px dashed rgba(21, 158, 145, 0.18);
+
+  border-radius: 50%;
+}
+
+.orbit-one {
+  width: 285px;
+  height: 285px;
+
+  animation: rotateOrbit 20s linear infinite;
+}
+
+.orbit-two {
+  width: 205px;
+  height: 205px;
+
+  border-color: rgba(21, 158, 145, 0.25);
+
+  animation: rotateOrbitReverse 14s linear infinite;
+}
+
+
+/* =========================================================
+   CENTER ICON
+========================================================= */
+
+.response-center-icon {
+  position: relative;
+  z-index: 5;
+
+  width: 112px;
+  height: 112px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 32px;
+
+  background: linear-gradient(
+    145deg,
+    #ffffff,
+    #eaf8f5
+  );
+
+  border: 1px solid #d4e8e4;
+
+  box-shadow:
+    0 20px 50px rgba(34, 90, 84, 0.15);
+
+  animation: centerFloat 4s ease-in-out infinite;
+}
+
+.response-center-icon span {
+  font-size: 48px;
+}
+
+
+/* =========================================================
+   FLOATING CARDS
+========================================================= */
+
+.floating-card {
+  position: absolute;
+  z-index: 6;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 11px 14px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  border: 1px solid #e0e9e7;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 12px 30px rgba(40, 70, 66, 0.08);
+
+  backdrop-filter: blur(8px);
+}
+
+.floating-card > span {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #eef8f6;
+
+  font-size: 16px;
+}
+
+.floating-card div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.floating-card strong {
+  font-size: 11px;
+  color: #283735;
+}
+
+.floating-card small {
+  font-size: 9px;
+  color: #8a9694;
+}
+
+.card-one {
+  top: 48px;
+  right: 5px;
+
+  animation: floatOne 4s ease-in-out infinite;
+}
+
+.card-two {
+  bottom: 52px;
+  left: 0;
+
+  animation: floatTwo 4.5s ease-in-out infinite;
+}
+
+.card-three {
+  bottom: 20px;
+  right: 18px;
+
+  animation: floatThree 5s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   ACCESS SECTION
+========================================================= */
+
+.response-access {
+  max-width: 1240px;
+
+  margin: 0 auto;
+
+  padding: 45px 5% 70px;
+
+  box-sizing: border-box;
+}
+
+.access-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-bottom: 28px;
+}
+
+.section-label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #159e91;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+}
+
+.access-heading h2 {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 29px;
+
+  letter-spacing: -0.025em;
+
+  color: #172322;
+}
+
+.access-heading > p {
+  max-width: 360px;
+
+  margin: 0;
+
+  color: #7c8987;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  text-align: right;
+}
+
+
+/* =========================================================
+   ACCESS GRID
+========================================================= */
+
+.access-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 16px;
+}
+
+
+/* =========================================================
+   ACCESS CARD
+========================================================= */
+
+.access-card {
+  min-height: 310px;
+
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  text-decoration: none;
+
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  border: 1px solid #e1e9e7;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.access-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 20px 45px rgba(38, 72, 68, 0.11);
+}
+
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.card-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.access-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  font-size: 22px;
+}
+
+.card-number {
+  font-family: "Manrope", sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  color: #a2adab;
+
+  letter-spacing: 0.05em;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.access-card-content {
+  margin-top: 28px;
+}
+
+.access-label {
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+}
+
+.access-card h3 {
+  margin: 8px 0 10px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 22px;
+
+  letter-spacing: -0.025em;
+
+  color: #263331;
+}
+
+.access-card-content p {
+  margin: 0;
+
+  color: #7d8a88;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   CARD FOOTER
+========================================================= */
+
+.access-card-footer {
+  margin-top: auto;
+
+  padding-top: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-top: 1px solid #edf1f0;
+
+  color: #596764;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+.access-card-footer strong {
+  font-size: 18px;
+
+  transition: transform 0.2s ease;
+}
+
+.access-card:hover .access-card-footer strong {
+  transform: translateX(5px);
+}
+
+
+/* =========================================================
+   CARD THEMES
+========================================================= */
+
+/* RESPONDER */
+
+.responder-card {
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #faf9ff
+    );
+}
+
+.responder-card .access-icon {
+  background: #eeeaff;
+}
+
+.responder-card .access-label {
+  color: #685caf;
+}
+
+.responder-card:hover {
+  border-color: #c9c1ed;
+}
+
+.responder-card .access-card-footer strong {
+  color: #6b5eb0;
+}
+
+
+/* LOGIN */
+
+.login-card {
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f8fcff
+    );
+}
+
+.login-card .access-icon {
+  background: #e7f5fb;
+}
+
+.login-card .access-label {
+  color: #24758e;
+}
+
+.login-card:hover {
+  border-color: #bcdde8;
+}
+
+.login-card .access-card-footer strong {
+  color: #247c94;
+}
+
+
+/* ADMIN */
+
+.admin-card {
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f5fbf9
+    );
+}
+
+.admin-card .access-icon {
+  background: #e4f5f0;
+}
+
+.admin-card .access-label {
+  color: #168d80;
+}
+
+.admin-card:hover {
+  border-color: #b8ddd7;
+}
+
+.admin-card .access-card-footer strong {
+  color: #159e91;
+}
+
+
+/* =========================================================
+   BOTTOM INFO
+========================================================= */
+
+.response-bottom {
+  max-width: 1240px;
+
+  margin: 0 auto;
+
+  padding: 0 5% 45px;
+
+  box-sizing: border-box;
+}
+
+.bottom-line {
+  height: 1px;
+
+  background: #e0e8e6;
+}
+
+.bottom-content {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-top: 25px;
+
+  gap: 30px;
+}
+
+.bottom-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.bottom-item > span {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #eaf8f5;
+
+  font-size: 13px;
+}
+
+.bottom-item div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.bottom-item strong {
+  font-size: 10px;
+
+  color: #4d5c59;
+}
+
+.bottom-item small {
+  font-size: 9px;
+
+  color: #909b99;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.response-footer {
+  min-height: 70px;
+
+  padding: 0 5%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-top: 1px solid #e5ecea;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+
+  color: #84908e;
+
+  font-size: 10px;
+}
+
+.response-footer div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.response-footer strong {
+  color: #253432;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 13px;
+}
+
+.response-footer span {
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes heroReveal {
+
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+@keyframes visualReveal {
+
+  from {
+    opacity: 0;
+    transform: translateX(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+@keyframes pulseDot {
+
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 4px rgba(21, 158, 145, 0.1);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 8px rgba(21, 158, 145, 0.03);
+  }
+
+}
+
+@keyframes glowPulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+
+}
+
+@keyframes centerFloat {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+}
+
+@keyframes rotateOrbit {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+@keyframes rotateOrbitReverse {
+
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+
+}
+
+@keyframes floatOne {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+}
+
+@keyframes floatTwo {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(7px);
+  }
+
+}
+
+@keyframes floatThree {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .response-hero {
+    grid-template-columns: 1fr;
+
+    padding-top: 55px;
+
+    text-align: center;
+  }
+
+  .response-hero-content > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .response-eyebrow {
+    justify-content: center;
+  }
+
+  .response-stats {
+    justify-content: center;
+  }
+
+  .response-hero-visual {
+    height: 330px;
+  }
+
+  .access-heading {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .access-heading > p {
+    text-align: left;
+
+    max-width: 500px;
+  }
+
+  .access-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .access-card {
+    min-height: 270px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .response-hero {
+    padding:
+      40px 6%
+      35px;
+  }
+
+  .response-hero h1 {
+    font-size: 38px;
+  }
+
+  .response-hero-content > p {
+    font-size: 14px;
+  }
+
+  .response-stats {
+    gap: 12px;
+  }
+
+  .response-stat strong {
+    font-size: 15px;
+  }
+
+  .response-stat span {
+    font-size: 8px;
+  }
+
+  .response-hero-visual {
+    height: 290px;
+  }
+
+  .response-orbit.orbit-one {
+    width: 235px;
+    height: 235px;
+  }
+
+  .response-orbit.orbit-two {
+    width: 170px;
+    height: 170px;
+  }
+
+  .response-center-icon {
+    width: 90px;
+    height: 90px;
+
+    border-radius: 25px;
+  }
+
+  .response-center-icon span {
+    font-size: 38px;
+  }
+
+  .floating-card {
+    transform: scale(0.85);
+  }
+
+  .card-one {
+    right: -5px;
+  }
+
+  .card-two {
+    left: -10px;
+  }
+
+  .card-three {
+    right: 0;
+  }
+
+  .response-access {
+    padding:
+      35px 6%
+      50px;
+  }
+
+  .access-heading h2 {
+    font-size: 25px;
+  }
+
+  .access-card {
+    padding: 20px;
+  }
+
+  .bottom-content {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .response-footer {
+    padding:
+      18px 6%;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+  }
+
+}
