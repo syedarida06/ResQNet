@@ -18,6 +18,7 @@ const PORT =
 const FRONTEND_ORIGINS = [
   "http://localhost:5173",
   "http://localhost:5174",
+  "https://res-q-net-git-main-syeda-rida-s-projects1.vercel.app"
 ];
 
 /* =========================================================
