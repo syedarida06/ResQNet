@@ -225,7 +225,7 @@ function Volunteer() {
       setLoadingRequests(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/emergency/pending"
+        "http://https://res-q-net-j6pb-5nuqnak23-syeda-rida-s-projects1.vercel.app/api/emergency/pending"
       );
 
       if (!response.ok) {

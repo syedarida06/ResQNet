@@ -7,7 +7,7 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "http://https://res-q-net-j6pb-5nuqnak23-syeda-rida-s-projects1.vercel.app/api";
 
 /* =====================================================
    RESPONSE TEAM COUNT

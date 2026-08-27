@@ -49,7 +49,7 @@ function ResponderRegistration() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/responders/register",
+        "http://https://res-q-net-j6pb-5nuqnak23-syeda-rida-s-projects1.vercel.app/api/responders/register",
         {
           method: "POST",
           headers: {

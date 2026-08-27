@@ -7,7 +7,7 @@ import {
 import Navbar from "./Navbar";
 import "./Citizen.css";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "http://https://res-q-net-j6pb-5nuqnak23-syeda-rida-s-projects1.vercel.app/api";
 
 const CITIZEN_EMERGENCY_STORAGE_KEY =
   "resqnetCitizenEmergencyId";
