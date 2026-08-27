@@ -3274,11 +3274,15 @@ app.put(
    START SERVER
 ========================================================= */
 
-app.listen(
-  PORT,
-  () => {
-    console.log(
-      `ResQNet Backend running on http://localhost:${PORT}`
-    );
-  }
-);
+if (require.main === module) {
+  app.listen(
+    PORT,
+    () => {
+      console.log(
+        `ResQNet Backend running on http://localhost:${PORT}`
+      );
+    }
+  );
+}
+
+module.exports = app;
